@@ -1,0 +1,36 @@
+Ques-1. What is the difference between in-place and out-place sorting algorithms?
+Ans-1.
+  In-place algorithms
+a. An in-place algorithm transforms the input without using any extra memory.
+As the algorithm executes, the input is usually overwritten by the output, and
+no additional space is needed for this operation.
+
+b. An in-place algorithm may require a small amount of extra memory for its
+operation. However, the amount of memory required must not be dependent
+on the input size and should be constant.
+
+c. Several sorting algorithms rearrange the input into sorted order in-place, such
+as insertion sort, selection sort, quick sort, bubble sort, heap sort, etc. All these
+algorithms require a constant amount of extra space for rearranging the
+elements in the input array.
+
+d. Usually, an algorithm is categorized as an in-place or an out-of-place
+algorithm based on the explicit storage allocated by the algorithm. However,
+calling a recursive algorithm as in-place is highly debatable since extra space
+is being used by the call stack. Although this space required by the call stack
+technically takes the recursive algorithms out of the in-place algorithms
+category, the algorithms requiring only O(log(n)) additional space is
+considered to be in-place.
+
+e. In-place algorithms are usually used in an embedded system that runs in
+limited memory. They reduce the space requirements to a great extent, but
+the algorithm time complexity increases in some cases.
+
+Out-of-place algorithms
+
+a. An algorithm that is not in-place is called a not-in-place or out-of-place
+algorithm. Unlike an in-place algorithm, the extra space used by an out-ofplace algorithm depends on the input size.
+
+b. The standard merge sort algorithm is an example of out-of-place algorithm as
+it requires O(n) extra space for merging. The merging can be done in-place,
+but it increases the time complexity of the sorting routine.
